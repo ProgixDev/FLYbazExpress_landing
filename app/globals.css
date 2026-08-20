@@ -220,23 +220,18 @@
     gap: 12px;
     margin-top: 8px;
   }
-  .store-btn {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    background: #0e1620;
-    color: #ffffff;
-    border-radius: 14px;
-    padding: 11px 18px;
-    border: none;
-    cursor: pointer;
-    transition: transform 0.15s ease;
+  .store-badge {
+    display: inline-flex;
+    transition: transform 0.15s ease, opacity 0.15s ease;
   }
-  .store-btn:hover { transform: translateY(-2px); }
-  .store-btn .material-symbols-outlined { font-size: 26px; }
-  .store-text { display: flex; flex-direction: column; align-items: flex-start; line-height: 1.2; }
-  .store-text .small { font-size: 10px; opacity: 0.75; }
-  .store-text .big { font-size: 14px; font-weight: 600; }
+  .store-badge:hover { transform: translateY(-2px); opacity: 0.9; }
+  .store-badge img { height: 46px; width: auto; }
+  .store-badge-play img {
+    /* the official PNG badge ships with built-in padding, so it needs a
+       touch more height to visually match the Apple SVG's cap-height */
+    height: 62px;
+    margin: -8px 0;
+  }
 
   .hero-visual {
     position: relative;
@@ -372,7 +367,6 @@
   @media (min-width: 768px) { .download-inner h2 { font-size: 32px; } }
   .download-inner > p { font-size: 16px; color: rgba(255,255,255,0.9); max-width: 480px; }
   .download-inner .store-row { justify-content: center; margin-top: 12px; }
-  .download-inner .store-btn { background: #ffffff; color: #0e1620; }
 
   /* footer */
   footer { background: var(--footer-bg); color: var(--footer-ink); }

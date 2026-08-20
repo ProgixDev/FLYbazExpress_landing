@@ -21,14 +21,12 @@ export default function Page() {
       <h1>Expédiez vos colis avec la communauté, partout dans le monde.</h1>
       <p className="hero-sub">Mettez en relation vos envois avec des voyageurs de confiance qui partent vers votre destination. Simple, rapide, et jusqu&apos;à 70 % moins cher qu&apos;un transporteur classique.</p>
       <div className="store-row">
-        <button className="store-btn">
-          <span className="material-symbols-outlined">file_download</span>
-          <span className="store-text"><span className="small">Download on the</span><span className="big">App Store</span></span>
-        </button>
-        <button className="store-btn">
-          <span className="material-symbols-outlined">shop</span>
-          <span className="store-text"><span className="small">GET IT ON</span><span className="big">Google Play</span></span>
-        </button>
+        <a href="#" className="store-badge" aria-label="Télécharger sur l&apos;App Store">
+          <img src="/app-store-badge.svg" alt="Télécharger dans l&apos;App Store" />
+        </a>
+        <a href="#" className="store-badge store-badge-play" aria-label="Disponible sur Google Play">
+          <img src="/google-play-badge.png" alt="Disponible sur Google Play" />
+        </a>
       </div>
     </div>
     <div className="hero-visual">
