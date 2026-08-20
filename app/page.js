@@ -112,14 +112,12 @@ export default function Page() {
     <h2>Prêt à envoyer ou à voyager ?</h2>
     <p>Rejoignez la communauté Flybaz Express et simplifiez vos expéditions dès aujourd&apos;hui.</p>
     <div className="store-row">
-      <button className="store-btn">
-        <span className="material-symbols-outlined">file_download</span>
-        <span className="store-text"><span className="small">Download on the</span><span className="big">App Store</span></span>
-      </button>
-      <button className="store-btn">
-        <span className="material-symbols-outlined">shop</span>
-        <span className="store-text"><span className="small">GET IT ON</span><span className="big">Google Play</span></span>
-      </button>
+      <a href="#" className="store-badge" aria-label="Télécharger sur l&apos;App Store">
+        <img src="/app-store-badge.svg" alt="Télécharger dans l&apos;App Store" />
+      </a>
+      <a href="#" className="store-badge store-badge-play" aria-label="Disponible sur Google Play">
+        <img src="/google-play-badge.png" alt="Disponible sur Google Play" />
+      </a>
     </div>
   </div>
 </section>
