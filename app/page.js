@@ -1,6 +1,10 @@
+import Motion from "./motion";
+
 export default function Page() {
   return (
     <>
+
+<Motion />
 
 <nav className="nav">
   <div className="wrap nav-inner">
@@ -60,25 +64,25 @@ export default function Page() {
 
 <section id="comment-ca-marche">
   <div className="wrap">
-    <div className="section-head">
+    <div className="section-head" data-reveal>
       <span className="eyebrow">Comment ça marche</span>
       <h2 className="display">Trois étapes, <em>et c&apos;est parti</em></h2>
       <p>De la recherche du voyageur à la remise du colis, tout se passe dans l&apos;application.</p>
     </div>
     <div className="steps">
-      <div className="step-card">
+      <div className="step-card" data-reveal>
         <span className="step-num">01</span>
         <img src="/screen-1.png" alt="Illustration d&apos;un voyageur avec sa valise" />
         <h3>Trouvez un voyageur</h3>
         <p>Cherchez un voyageur qui effectue votre trajet prochainement.</p>
       </div>
-      <div className="step-card">
+      <div className="step-card" data-reveal>
         <span className="step-num">02</span>
         <img src="/screen-2.png" alt="Illustration d&apos;un livreur avec un colis et un repère de localisation" />
         <h3>Réservez vos kilos</h3>
         <p>Indiquez le poids et la nature de votre colis (documents, cadeaux, électronique).</p>
       </div>
-      <div className="step-card">
+      <div className="step-card" data-reveal>
         <span className="step-num">03</span>
         <img src="/screen-3.png" alt="Illustration d&apos;une remise de colis entre deux personnes" />
         <h3>Colis livré !</h3>
@@ -90,7 +94,7 @@ export default function Page() {
 
 <section id="confiance" className="trust">
   <div className="wrap trust-grid">
-    <div className="trust-copy">
+    <div className="trust-copy" data-reveal>
       <span className="eyebrow">Confiance &amp; sécurité</span>
       <h2 className="display">Chaque colis, <em>entre de bonnes mains</em></h2>
       <p>
@@ -103,22 +107,22 @@ export default function Page() {
       </a>
     </div>
     <div className="trust-cards">
-      <div className="trust-card">
+      <div className="trust-card" data-reveal>
         <span className="material-symbols-outlined">verified_user</span>
         <h4>Vérification KYC</h4>
         <p>Identité réelle vérifiée pour chaque utilisateur.</p>
       </div>
-      <div className="trust-card">
+      <div className="trust-card" data-reveal>
         <span className="material-symbols-outlined">star_rate</span>
         <h4>Avis certifiés</h4>
         <p>La communauté s&apos;évalue après chaque transaction.</p>
       </div>
-      <div className="trust-card">
+      <div className="trust-card" data-reveal>
         <span className="material-symbols-outlined">chat_bubble</span>
         <h4>Messagerie sécurisée</h4>
         <p>Échangez en toute sécurité via notre plateforme.</p>
       </div>
-      <div className="trust-card">
+      <div className="trust-card" data-reveal>
         <span className="material-symbols-outlined">shield_lock</span>
         <h4>Réservation protégée</h4>
         <p>Chaque réservation est suivie de bout en bout, du dépôt à la remise.</p>
@@ -129,7 +133,7 @@ export default function Page() {
 
 <section id="voyageurs" className="travelers">
   <div className="wrap travelers-grid">
-    <div className="travelers-copy">
+    <div className="travelers-copy" data-reveal>
       <span className="eyebrow">Voyageurs</span>
       <h2 className="display">Rentabilisez <em>chaque voyage</em></h2>
       <p>
@@ -152,8 +156,18 @@ export default function Page() {
         </div>
       </div>
     </div>
-    <div className="travelers-visual">
-      <img src="/hero.png" alt="Un voyageur remet un colis à une expéditrice devant l&apos;avion, à l&apos;aéroport" />
+    <div className="travelers-visual" data-reveal>
+      <video
+        src="/video-web.mp4"
+        poster="/video-poster.jpg"
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="metadata"
+        data-autoplay
+        aria-label="Un voyageur consulte ses trajets dans l&apos;application Flybaz Express"
+      />
     </div>
   </div>
 </section>
@@ -163,7 +177,7 @@ export default function Page() {
     <img src="/Airport%20Departure%20Scene.png" alt="" aria-hidden="true" />
   </div>
   <div className="wrap">
-    <div className="download-inner">
+    <div className="download-inner" data-reveal>
       <span className="eyebrow">Disponible maintenant</span>
       <h2 className="display">Prêt à envoyer <em>ou à voyager ?</em></h2>
       <p>Rejoignez la communauté Flybaz Express et simplifiez vos expéditions dès aujourd&apos;hui.</p>
