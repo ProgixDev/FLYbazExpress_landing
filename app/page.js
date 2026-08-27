@@ -7,30 +7,53 @@ export default function Page() {
     <div className="brand"><img src="/logo.png" alt="Flybaz Express" />Flybaz Express</div>
     <div className="nav-links">
       <a href="#comment-ca-marche">Comment ça marche</a>
+      <a href="#confiance">Confiance &amp; sécurité</a>
       <a href="#voyageurs">Pour les voyageurs</a>
-      <a href="#confiance">Confiance & sécurité</a>
     </div>
-    <button className="btn btn-primary"><span className="material-symbols-outlined" style={{ fontSize: "18px" }}>download</span>Télécharger l&apos;app</button>
+    <button className="btn btn-dark">Télécharger l&apos;app</button>
   </div>
 </nav>
 
 <header className="hero">
-  <div className="hero-bg"></div>
+  <div className="hero-photo">
+    <img src="/Airport%20Departure%20Scene.png" alt="" aria-hidden="true" />
+  </div>
+
   <div className="wrap hero-grid">
     <div className="hero-copy">
-      <h1>Expédiez vos colis avec la communauté, partout dans le monde.</h1>
-      <p className="hero-sub">Mettez en relation vos envois avec des voyageurs de confiance qui partent vers votre destination. Simple, rapide, et jusqu&apos;à 70 % moins cher qu&apos;un transporteur classique.</p>
-      <div className="store-row">
-        <a href="#" className="store-badge" aria-label="Télécharger sur l&apos;App Store">
-          <img src="/app-store-badge.svg" alt="Télécharger dans l&apos;App Store" />
-        </a>
-        <a href="#" className="store-badge store-badge-play" aria-label="Disponible sur Google Play">
-          <img src="/google-play-badge.png" alt="Disponible sur Google Play" />
-        </a>
+      <h1 className="display">Expédiez partout avec Flybaz Express</h1>
+      <p className="hero-sub">
+        Confiez vos colis à des voyageurs vérifiés qui partent déjà vers votre destination.
+        Simple, suivi de bout en bout, et jusqu&apos;à 70 % moins cher.
+      </p>
+      <button className="btn btn-dark btn-lg">
+        Commencer
+        <span className="material-symbols-outlined" style={{ fontSize: "18px" }}>arrow_forward</span>
+      </button>
+    </div>
+
+    <div className="hero-phones">
+      <div className="phone phone-back">
+        <div className="phone-screen">
+          <img src="/2.jpg" alt="Carte des trajets disponibles dans l&apos;application Flybaz Express" />
+        </div>
+      </div>
+      <div className="phone phone-front">
+        <div className="phone-screen">
+          <img src="/3.jpg" alt="Écran d&apos;accueil de l&apos;application : envoyez sans stress" />
+        </div>
       </div>
     </div>
-    <div className="hero-visual">
-      <img src="/hero.png" alt="Un voyageur remet un colis à une expéditrice devant l&apos;avion, à l&apos;aéroport" />
+  </div>
+
+  <div className="wrap hero-foot">
+    <div className="store-row">
+      <a href="#" className="store-badge" aria-label="Télécharger sur l&apos;App Store">
+        <img src="/app-store-badge.svg" alt="Télécharger dans l&apos;App Store" />
+      </a>
+      <a href="#" className="store-badge store-badge-play" aria-label="Disponible sur Google Play">
+        <img src="/google-play-badge.png" alt="Disponible sur Google Play" />
+      </a>
     </div>
   </div>
 </header>
@@ -38,8 +61,9 @@ export default function Page() {
 <section id="comment-ca-marche">
   <div className="wrap">
     <div className="section-head">
-      <h2>Comment ça marche</h2>
-      <p>Trois étapes simples pour envoyer votre colis à l&apos;autre bout du monde.</p>
+      <span className="eyebrow">Comment ça marche</span>
+      <h2 className="display">Trois étapes, <em>et c&apos;est parti</em></h2>
+      <p>De la recherche du voyageur à la remise du colis, tout se passe dans l&apos;application.</p>
     </div>
     <div className="steps">
       <div className="step-card">
@@ -64,8 +88,20 @@ export default function Page() {
   </div>
 </section>
 
-<section id="confiance" className="trust-section">
+<section id="confiance" className="trust">
   <div className="wrap trust-grid">
+    <div className="trust-copy">
+      <span className="eyebrow">Confiance &amp; sécurité</span>
+      <h2 className="display">Chaque colis, <em>entre de bonnes mains</em></h2>
+      <p>
+        Identité vérifiée, avis réels et suivi du trajet en direct : tout est pensé
+        pour que vous confiiez vos envois l&apos;esprit tranquille.
+      </p>
+      <a className="trust-link" href="#">
+        En savoir plus sur la sécurité
+        <span className="material-symbols-outlined">arrow_forward</span>
+      </a>
+    </div>
     <div className="trust-cards">
       <div className="trust-card">
         <span className="material-symbols-outlined">verified_user</span>
@@ -85,39 +121,60 @@ export default function Page() {
       <div className="trust-card">
         <span className="material-symbols-outlined">shield_lock</span>
         <h4>Réservation protégée</h4>
-        <p>Kilos, téléphones ou documents : chaque réservation est suivie de bout en bout.</p>
+        <p>Chaque réservation est suivie de bout en bout, du dépôt à la remise.</p>
       </div>
-    </div>
-    <div className="trust-copy">
-      <h2>Pourquoi nous faire confiance</h2>
-      <p>La sécurité de vos envois est notre priorité absolue. Identité vérifiée, avis réels et suivi du trajet en direct : tout est pensé pour une expérience sereine.</p>
-      <a className="trust-link" href="#">En savoir plus sur la sécurité <span className="material-symbols-outlined">arrow_forward</span></a>
     </div>
   </div>
 </section>
 
 <section id="voyageurs" className="travelers">
-  <span className="blob blob-1"></span>
-  <span className="blob blob-2"></span>
-  <div className="wrap travelers-inner">
-    <span className="eyebrow">Voyageurs</span>
-    <h2>Rentabilisez vos voyages</h2>
-    <p>Gagnez de l&apos;argent en partageant l&apos;espace libre dans vos valises. C&apos;est sûr, encadré, et facile à mettre en place.</p>
-    <button className="btn btn-primary" style={{ padding: "15px 30px", fontSize: "15px" }}>Proposer un trajet</button>
+  <div className="wrap travelers-grid">
+    <div className="travelers-copy">
+      <span className="eyebrow">Voyageurs</span>
+      <h2 className="display">Rentabilisez <em>chaque voyage</em></h2>
+      <p>
+        Gagnez de l&apos;argent en partageant l&apos;espace libre dans vos valises.
+        Vous choisissez vos kilos, vos trajets et vos expéditeurs.
+      </p>
+      <button className="btn btn-dark btn-lg">Proposer un trajet</button>
+      <div className="travelers-stats">
+        <div>
+          <div className="stat-num">70 %</div>
+          <div className="stat-label">d&apos;économies en moyenne</div>
+        </div>
+        <div>
+          <div className="stat-num">48 h</div>
+          <div className="stat-label">de délai moyen de livraison</div>
+        </div>
+        <div>
+          <div className="stat-num">100 %</div>
+          <div className="stat-label">des profils vérifiés</div>
+        </div>
+      </div>
+    </div>
+    <div className="travelers-visual">
+      <img src="/hero.png" alt="Un voyageur remet un colis à une expéditrice devant l&apos;avion, à l&apos;aéroport" />
+    </div>
   </div>
 </section>
 
-<section className="download-band">
-  <div className="wrap download-inner">
-    <h2>Prêt à envoyer ou à voyager ?</h2>
-    <p>Rejoignez la communauté Flybaz Express et simplifiez vos expéditions dès aujourd&apos;hui.</p>
-    <div className="store-row">
-      <a href="#" className="store-badge" aria-label="Télécharger sur l&apos;App Store">
-        <img src="/app-store-badge.svg" alt="Télécharger dans l&apos;App Store" />
-      </a>
-      <a href="#" className="store-badge store-badge-play" aria-label="Disponible sur Google Play">
-        <img src="/google-play-badge.png" alt="Disponible sur Google Play" />
-      </a>
+<section className="download">
+  <div className="download-photo">
+    <img src="/Airport%20Departure%20Scene.png" alt="" aria-hidden="true" />
+  </div>
+  <div className="wrap">
+    <div className="download-inner">
+      <span className="eyebrow">Disponible maintenant</span>
+      <h2 className="display">Prêt à envoyer <em>ou à voyager ?</em></h2>
+      <p>Rejoignez la communauté Flybaz Express et simplifiez vos expéditions dès aujourd&apos;hui.</p>
+      <div className="store-row">
+        <a href="#" className="store-badge" aria-label="Télécharger sur l&apos;App Store">
+          <img src="/app-store-badge.svg" alt="Télécharger dans l&apos;App Store" />
+        </a>
+        <a href="#" className="store-badge store-badge-play" aria-label="Disponible sur Google Play">
+          <img src="/google-play-badge.png" alt="Disponible sur Google Play" />
+        </a>
+      </div>
     </div>
   </div>
 </section>
