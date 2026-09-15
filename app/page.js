@@ -197,10 +197,10 @@ export default function Page() {
   <div className="wrap footer-inner">
     <div className="footer-brand"><img src="/logo.png" alt="" />Flybaz Express</div>
     <div className="footer-links">
-      <a href="#">Conditions générales</a>
-      <a href="#">Confidentialité</a>
-      <a href="#">Contact</a>
-      <a href="#">FAQ</a>
+      <a href="/conditions-utilisation">Conditions générales</a>
+      <a href="/confidentialite">Confidentialité</a>
+      <a href="/mentions-legales">Mentions légales</a>
+      <a href="mailto:contact@flybaz.ca">Contact</a>
     </div>
     <div className="footer-copy">© 2026 Flybaz Express. Tous droits réservés.</div>
   </div>
